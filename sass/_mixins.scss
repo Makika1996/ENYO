@@ -1,0 +1,27 @@
+@mixin column($columns, $margin) {
+  width: calc(#{100% / $columns} - #{$margin * ($columns - 1) / $columns});
+  margin-right: $margin;
+
+  &:last-child {
+    margin-right: 0
+  }
+}
+
+
+@mixin mq($nesto) {
+  @if ($nesto == to992) {
+    @media only screen and (max-width: 991px) { @content; }
+  }
+
+  @elseif ($nesto == from992) {
+    @media only screen and (min-width: 992px) { @content; }
+  }
+
+  @elseif ($nesto == to768) {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+
+  @elseif ($nesto == from768) {
+    @media only screen and (min-width: 768px) { @content; }
+  }
+}

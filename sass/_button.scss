@@ -1,0 +1,27 @@
+.button {
+  padding: 15px 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #25365D;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+
+  i {
+    color: #0E1525;
+    padding-right: 5px;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+    color: #25365D;
+    border-color: #25365D;
+  }
+}

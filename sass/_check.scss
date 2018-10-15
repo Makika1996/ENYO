@@ -1,0 +1,48 @@
+.check {
+  .header {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #25365D;
+    margin: 50px 0;
+  }
+
+  .row {
+    display: flex;
+    // justify-content: space-between;
+
+    > div {
+      // selektuje sve sem diva sa klasom row center
+      &:not(.row-center) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 0 50px 0;
+      }
+
+      &.row-center {
+        flex: 1;
+        text-align: center;
+      }
+
+      &.row-right {
+        text-align: right;
+      }
+    }
+  }
+
+  .column {
+    max-width: 200px;
+  }
+
+  .feature {
+    font-size: 20px;
+    font-size: bold;
+    color: #25365D;
+  }
+
+  p {
+    font-size: 15px;
+    color: #5A5A5A;
+  }
+}

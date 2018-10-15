@@ -1,0 +1,111 @@
+.plans {
+  background: #F7F9FB;
+
+  .header {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #25365D;
+    padding: 20px 0;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    color: #5A5A5A;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    &.row-center {
+      flex: 1;
+      text-align: center;
+    }
+
+    &.row-right {
+      text-align: right;
+    }
+  }
+
+  .column {
+    @include column(3, 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: left;
+    text-align: center;
+    padding: 20px 50px;
+    background: #fff;
+    background: red;
+  }
+
+  h3 {
+    color: #5A5A5A;
+  }
+
+  .price {
+    span {
+      &.big {
+        font-size: 80px;
+        font-weight: bold;
+        color: #25365D;
+      }
+
+      &.small {
+        font-size: 40px;
+        color: #25365D;
+      }
+
+      p {
+        font-size: 30px;
+        color: #5A5A5A;
+      }
+    }
+  }
+
+  .questions {
+    text-align: center;
+
+    i {
+      font-size: 40px;
+    }
+
+    .header1 {
+      font-size: 25px;
+      color: #25365D;
+      padding: 20px 0;
+    }
+
+    .text {
+      font-size: 15px;
+      color: #5A5A5A;
+      margin-bottom: 30px;
+    }
+
+    span {
+      i {
+        font-size: 30px;
+        color: #000;
+        padding-right: 5px;
+      }
+
+      .e-mail,
+      .phone-num {
+        font-size: 20px;
+        font-weight: bold;
+        color: #25365D;
+        min-height: 10em;
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .e-mail {
+        padding-right: 80px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.navigation ul {
+  padding: 30px 0;
+  list-style: none;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  text-align: right;
+
+  li {
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+
+    &.align-left {
+      float: left;
+    }
+
+    &.color-black {
+      color: #000;
+    }
+
+    a {
+      display: inline-block;
+      color: #fff;
+      text-align: center;
+      padding: 0 20px;
+      text-decoration: none;
+      height: 30px;
+      line-height: 30px;
+
+      &:hover {
+        color: #0489D1;
+        background-color: #fff;
+        border-radius: 10px;
+      }
+    }
+  }
+}
